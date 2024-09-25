@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maverick Rover Team</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/rovers.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (navList.style.display === 'none' || navList.style.display === '') {
+                navList.style.display = 'flex';
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div>
+        <header id="header">
+            <nav id="nav">
+                <img src="images/logo.svg" id="logo-img" alt="Logo">
+                <div id="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul id="nav-list">
+                    <li id="close-icon" onclick="toggleMenu()">✖</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/rovers" style="color: #AE445A; text-shadow: 2px 2px 8px rgb(83, 83, 83);">Rovers</a>
+                    </li>
+                    <li><a href="/teams">Teams</a></li>
+                    <li><a href="/">Sponsors</a></li>
+                    <li><a href="/">Updates</a></li>
+                </ul>
+            </nav>
+
+            <!-- <h2>ENGINEERING THE FUTURE</h2>
+            <h3 id="headline">Exploring the Universe One Rover at a Time</h3>
+            <div id="bannerbuttons">
+                <button id="meet">Meet the Team</button>
+                <button id="sponsor">Sponsor Us</button>
+            </div> -->
+        </header>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="discoveryh2">OUR ROVERS</h2>
+        <br>
+        <br>
+        <img src="images/roverbanner.svg" style="height: 100vh; width: 100vw; object-fit: cover;">
+        <h2 class="discoveryh2">HOW MANY ROVERS DO WE HAVE?</h2>
+        <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+            nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+            augue varius tempus lobortis porttitor accumsan consequat
+            adipiscing lorem dolor.<br><br>
+            Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+            nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+            augue varius tempus lobortis porttitor accumsan consequat
+            adipiscing lorem dolor.</p>
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/rstars.svg" style="width: 100%; position: absolute;">
+            <div id="teamrover1">
+                <br><br><br>
+                <h3 class="discoveryh3">OUR CURRENT ROVER</h3>
+                <br>
+                <img style="height: 40%; width: 80% "  src="images/team1.svg">
+                <p class="contentp">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                    Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                    nisi praesent dolor adipiscing Integer.</p>
+            </div>
+
+            <div style="background-color: #66244A;">
+                <div style="display: flex; flex-direction: column;">
+                    <img style="position: absolute; float: inline-end;  width: 30%;" src="images/trstars.svg">
+                    <div id="teamrover2">
+                        <br>
+                        <br>
+                        <h3 class="discoveryh3">OUR THIRD ROVER</h3>
+                        <br>
+                        <br>
+                        <img style="height: 40%; width: 80% "  src="images/team2.svg">
+                        <p class="contentp">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                            nisi praesent dolor adipiscing Integer.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div style="background-color: #AE445A">
+                <div style="display: flex; flex-direction: column;">
+                    <div id="teamrover3">
+                        <img style="float: inline-end; margin-left: 60%; height: 20%; width: 20%;" src="images/srstars.svg">
+                        <h3 class="discoveryh3">OUR SECOND ROVER</h3>
+                        <br>
+                        <br>
+                        <img style="height: 40%; width: 80% " src="images/team2.svg">
+                        <p class="contentp">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                            nisi praesent dolor adipiscing Integer.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div style="background-color: #F39D62">
+                <div style="display: flex; flex-direction: column;">
+                    <div id="teamrover4">
+                        <img style="margin-right: 72%; width: 20%; margin-top: 6%;" src="images/frstars.svg">
+                        <h3 class="discoveryh3">OUR FIRST ROVER</h3>
+                        <br>
+                        <br>
+                        <img style="height: 40%; width: 80% "  src="images/team2.svg">
+                        <p class="contentp">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                            nisi praesent dolor adipiscing Integer.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img id="ftrstars" src="images/fstars.svg"><img src="images/logo.svg" id="logo-img2" alt="Logo">
+            </div>
+        </div>
+        <div class="footer-image-div">
+            <div style="display: flex; flex-direction: column; align-items: center; ">
+                <div class="footericons"><img src="images/ig.svg" class="footerimg"><img src="images/fb.svg"
+                        class="footerimg">
+                </div>
+                <div>
+                    <ul class="footerlist">
+                        <li>Rovers</li>
+                        <li>Teams</li>
+                        <li>Updates</li>
+                        <li>Sponsors</li>
+                    </ul>
+                    <p id="footerp">Copyright © 2024 Maverick Rover Team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

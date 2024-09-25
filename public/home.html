@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maverick Rover Team</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/home2.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (navList.style.display === 'none' || navList.style.display === '') {
+                navList.style.display = 'flex';
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        }
+
+
+        window.onload = function () {
+            const slider = document.querySelector('.gallery');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', e => {
+                isDown = true;
+                slider.classList.add('active');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mousemove', e => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const SCROLL_SPEED = 1;
+                const walk = (x - startX) * SCROLL_SPEED;
+                slider.scrollLeft = scrollLeft - walk;
+
+                // Check boundaries
+                if (slider.scrollLeft < 0) {
+                    slider.scrollLeft = 0;
+                } else if (slider.scrollLeft > slider.scrollWidth - slider.clientWidth) {
+                    slider.scrollLeft = slider.scrollWidth - slider.clientWidth;
+                }
+            });
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="image-div">
+        <header id="header">
+            <nav id="nav">
+                <img src="images/logo.svg" id="logo-img" alt="Logo">
+                <div id="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul id="nav-list" style="margin-left: 12vw;">
+                    <li id="close-icon" onclick="toggleMenu()">✖</li>
+                    <li><a href="/rovers">Rovers</a></li>
+                    <li><a href="/teams">Teams</a></li>
+                    <li><a href="index.html">Sponsors</a></li>
+                    <li><a href="index.html">Updates</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items:end;">
+            </div>
+            <h2><img style="float: left; margin-left: 10%; margin-top:3vh" src="images/h2star1.svg"> <img
+                    style="float: right; margin-right: 2%; margin-top:3vh" src="images/h2star2.svg"></h2>
+            <br>
+            <!-- <div style="display: flex; flex-direction:column;"><div class="title1">
+            ENGINEERING THE
+        </div>
+        <div class="title2">
+            FUTURE
+        </div> -->
+            <h2 style="font-size: 7vw; margin-bottom:0%; margin-top:1vh; letter-spacing: 1.3vw;">ENGINEERING THE</h2>
+            <br>
+            <h2 style="font-size: 26vw; margin-top:0%">FUTURE</h2>
+            <h3 id="headline">
+                Exploring the Universe One Rover at a Time</h3>
+            <div id="bannerbuttons">
+                <button id="meet">Meet the Team</button>
+                <button id="sponsor">Sponsor Us</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </header>
+    </div>
+
+    <div style="justify-content: center; align-items: center;">
+        <div id="mobilediscovery"
+            style="font-family:century-gothic-regular; color:white; word-spacing:3px; font-size:3vw; margin-left:8.5vw; margin-right:8vw;">
+            <h2 class="discoveryh2" >DISCOVERY STARTS HERE</h2>
+            <p>
+            <h3 style="font-family:Inter; color:white; word-spacing:3px;">Welcome to
+                the Maverick Rover Team at the University of Texas
+                at Arlington!</h3>
+            <br>
+            At the forefront of innovation, the Maverick Rover Team is a multidisciplinary group of students
+            dedicated to engineering the future of space exploration. Our team designs and builds
+            cutting-edge rovers to compete in international competitions such as the University Rover
+            Challenge.
+            <br><br>Comprised of students from engineering, science, and design backgrounds, our team works
+            collaboratively to push the boundaries of what's possible in rover technology. Each discipline
+            contributes its unique expertise to the design, programming, and fabrication of rovers that can
+            endure and operate in the harsh conditions of extraterrestrial environments. From mechanical
+            engineers perfecting the suspension systems to computer scientists programming autonomous
+            navigation, every aspect of the rover is meticulously developed.
+            <br><br>
+            Through our work, we aim to inspire the next generation of engineers and scientists while
+            contributing to the broader goals of space exploration. The diversity of skills within our team
+            ensures that we tackle challenges from multiple angles, leading to innovative solutions that set our
+            rovers apart in international competitions. Whether it’s through competing on the international
+            stage or engaging with the local community, the Maverick Rover Team is always striving to go above
+            and beyond.</p>
+            <div class="roverbutton">
+                <button id="rover">Our Rovers</button>
+            </div>
+        </div>
+        <div id="webdiscovery">
+            <div style="display: flex; flex-direction:row; justify-content:center; align-items:center;">
+                <h2 class="discoveryh2" style="margin-right: 12vw;">DISCOVERY STARTS HERE</h2> <button id="rover"
+                    style="margin-left: 6vw;">Our Rovers</button>
+            </div>
+            <div style="display: flex; flex-direction:row;">
+                <div
+                    style="width: 25vw; margin-left:7vw; font-family:Inter; color:white; word-spacing:3px; font-size:1.7vw">
+                    <h3 style="font-size: 2vw;">Welcome to the Maverick Rover Team at the University of Texas
+                        at Arlington!</h3>
+                    <br>
+                    <br>
+                    At the forefront of innovation, the Maverick Rover Team is a multidisciplinary group of students
+                    dedicated to engineering the future of space exploration. Our team designs and builds
+                    cutting-edge rovers to compete in international competitions such as the University Rover
+                    Challenge.
+
+                </div>
+                <div
+                    style="width: 25vw; margin-top:3vh; margin-left:3vw; font-family: Inter; color:white; word-spacing:3px; font-size:1.7vw; justify-content:center;">
+                    Comprised of students from engineering, science, and design backgrounds, our team works
+                    collaboratively to push the boundaries of what's possible in rover technology. Each discipline
+                    contributes its unique expertise to the design, programming, and fabrication of rovers that can
+                    endure and operate in the harsh conditions of extraterrestrial environments. From mechanical
+                    engineers perfecting the suspension systems to computer scientists programming autonomous
+                    navigation, every aspect of the rover is meticulously developed.
+
+                </div>
+                <div
+                    style="width: 25vw; margin-top:3vh; margin-left:3vw; font-family:Inter; color:white; word-spacing:3px; font-size:1.7vw; justify-content:center;">
+                    Through our work, we aim to inspire the next generation of engineers and scientists while
+                    contributing to the broader goals of space exploration. The diversity of skills within our team
+                    ensures that we tackle challenges from multiple angles, leading to innovative solutions that set our
+                    rovers apart in international competitions. Whether it’s through competing on the international
+                    stage or engaging with the local community, the Maverick Rover Team is always striving to go above
+                    and beyond.
+                    <br>
+                    Join us as we engineer the future, one rover at a time!
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="mobileteamleads">
+            <h2><img style="float: right; margin-right: 2%;" src="images/h2star2.svg"></h2>
+            <br>
+            <h2 class="discoveryh2">TEAM LEADS</h2>
+            <br>
+            <br>
+            <ul class="gallerymobile" id="check">
+                <li
+                    style="background: #F39D62; display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%;" src="images/tl1.png">
+                    <div style="display: flex; flex-direction:column; margin-left:2vw;">
+                        <h3 style="font-family:equinox-regular; color:rgb(0, 0, 0); font-size:4vw; margin:0;">
+                            GABRIEL<br>BENTLEY</h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:2.5vw;color:rgb(0, 0, 0);padding:0;  margin:0; margin-top:1vh; margin-bottom:1vh;">
+                            MECHANICAL<br>TEAM LEAD</h4>
+                        <h4
+                            style="font-family:century-gothic-bold;font-size:2vw;color:rgb(0, 0, 0);padding:0;  margin:0;">
+                            Major: Aerospace Engineering</h4>
+                    </div>
+                </li>
+                <li
+                    style="background: #AE445A;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px;" src="images/tl2.png">
+                    <div style="display: flex; flex-direction:column; margin-left:2vw;">
+                        <h3 style="font-family:equinox-regular; color:white; font-size:6vw; margin:0;">CHLOIS<br>HILL
+                        </h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:3.5vw;color:white;padding:0;  margin:0; margin-top:1vh; margin-bottom:1vh;">
+                            ALIEN<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:3vw;color:white;padding:0;  margin:0;">
+                            Major: Engineering Geology</h4>
+                </li>
+                <li
+                    style="background: #672549;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px; height:100%" src="images/tl3.png">
+                    <div style="display: flex; flex-direction:column; margin-left:2vw;">
+                        <h3 style="font-family:equinox-regular; color:white; font-size:6vw; margin:0;">
+                            CHANDAN<br>RUDRAPPA</h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:3.5vw;color:white;padding:0;  margin:0; margin-top:1vh; margin-bottom:1vh;">
+                            CONTROLS<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:3vw;color:white;padding:0;  margin:0;">
+                            Major: Data Science</h4>
+                </li>
+                <li
+                    style="background: #F39D62;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px;" src="images/tl4.png">
+                    <div style="display: flex; flex-direction:column; margin-left:2vw;">
+                        <h3 style="font-family:equinox-regular; color:rgb(0, 0, 0); font-size:6vw; margin:0;">
+                            ISHITA<br>SUNIL</h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:3.5vw;color:rgb(0, 0, 0);padding:0;  margin:0; margin-top:1vh; margin-bottom:1vh;">
+                            SPARK<br>TEAM LEAD</h4>
+                        <h4
+                            style="font-family:century-gothic-bold;font-size:3vw;color:rgb(0, 0, 0);padding:0;  margin:0;">
+                            Major: Information Systems</h4>
+                </li>
+            </ul>
+        </div>
+        <div id="webteamleads">
+            <h2><img style="float: right; margin-right: 2%;" src="images/h2star2.svg"></h2>
+            <br>
+            <h2 class="discoveryh2">TEAM LEADS</h2>
+            <br>
+            <br>
+            <ul class="gallery" id="check">
+                <li
+                    style="background: #F39D62; display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%;" src="images/tl1.png">
+                    <div style="display: flex; flex-direction:column; margin-left:1vw;">
+                        <h3 style="font-family:equinox-regular; color:rgb(0, 0, 0); font-size:3vw; margin:0;">
+                            GABRIEL<br>BENTLEY</h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:1.5vw;color:rgb(0, 0, 0);padding:0;  margin:0; margin-top:1vh; margin-bottom:3vh;">
+                            MECHANICAL<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:1.5vw;color:rgb(0, 0, 0);padding:0;  margin:0;">
+                            Major: Aerospace Engineering</h4>
+                    </div>
+                </li>
+                <li
+                    style="background: #AE445A;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px;" src="images/tl2.png">
+                    <div style="display: flex; flex-direction:column; margin-left:1vw;">
+                        <h3 style="font-family:equinox-regular; color:white; font-size:3vw; margin:0;">CHLOIS<br>HILL
+                        </h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:1.5vw;color:white;padding:0;  margin:0; margin-top:1vh; margin-bottom:3vh;">
+                            ALIEN<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:1.5vw;color:white;padding:0;  margin:0;">
+                            Major: Engineering Geology</h4>
+                </li>
+                <li
+                    style="background: #672549;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px; height:100%" src="images/tl3.png">
+                    <div style="display: flex; flex-direction:column; margin-left:1vw;">
+                        <h3 style="font-family:equinox-regular; color:white; font-size:3vw; margin:0;">
+                            CHANDAN<br>RUDRAPPA</h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:1.5vw;color:white;padding:0;  margin:0; margin-top:1vh; margin-bottom:3vh;">
+                            CONTROLS<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:1.5vw;color:white;padding:0;  margin:0;">
+                            Major: Data Science</h4>
+                </li>
+                <li
+                    style="background: #F39D62;display: flex; flex-direction: row; padding: 5%; justify-content: center; align-items: center;">
+                    <img style="width: 50%; border-radius:100px;" src="images/tl4.png">
+                    <div style="display: flex; flex-direction:column; margin-left:1vw;">
+                        <h3 style="font-family:equinox-regular; color:rgb(0, 0, 0); font-size:3vw; margin:0;">ISHITA<br>SUNIL
+                        </h3>
+                        <h4
+                            style="font-family:equinox-regular;font-size:1.5vw;color:rgb(0, 0, 0);padding:0;  margin:0; margin-top:1vh; margin-bottom:3vh;">
+                            SPARK<br>TEAM LEAD</h4>
+                        <h4 style="font-family:century-gothic-bold;font-size:1.5vw;color:rgb(0, 0, 0);padding:0;  margin:0;">
+                            Major: Information Systems</h4>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="roverbutton">
+            <h2><img style="float: right; margin-left: 70vw; height:16vh;" src="images/h2star2.svg"></h2> <img id="pattern" src="images/pattern.png"><img style="float: right; margin-right: 70vw; height:16vh;" src="images/h2star1.svg">
+        </div>
+        <h2 class="discoveryh2">OUR PROGRESS</h2>
+        <!-- <img style="float: right; margin-right: 2%;" src="images/h2star2.svg"> -->
+        <div id="webprogress">
+            <div id="progressdiv" style="margin-left:3vw;">
+                <div class="progress" style="width:85vw; padding:0; margin:0; height:80vh;"><img src="images/prg.png"
+                        style="width:85vw; height:52.5vh; border-radius:85px 85px 0 0;" alt="Team Lead 5">
+                    <div style="display: flex; flex-direction:row;">
+                        <div
+                            style="width: 35vw; font-family:Inter; color:white; word-spacing:3px; font-size:1.3vw;margin-top:2.5vh;">
+                            Shown here is the V1 of our Chassis and Suspension design, it features an aluminum extrusion
+                            frame and aluminum sheet metal skin, allowing for a cost effective and easily modifiable
+                            chassis.
+
+                        </div>
+                        <div
+                            style="width: 35vw; margin-top:3vh; margin-left:3vw; font-family: Inter; color:white; word-spacing:3px; font-size:1.3vw; justify-content:center;">
+                            The six-wheeled rocker bogie suspension uses a differential bar to ensure equal movement
+                            between the sides, with the two black gas shocks and all rubber airless tires absorbing
+                            impact forces.
+
+                        </div>
+                    </div>
+
+                    <div id="roverbutton" style="margin-top:3vh; margin-bottom: 6vh;">
+                        <button id="updates">Updates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobileprogress">
+            <div id="progressdiv" style="width:85vw;">
+                <div class="progress"
+                    style="font-family: Inter; color:white; padding:2vw; padding-top:0;  height:50vh; width:80vw; font-size:2.6vw; padding-left:2vw">
+                    <img src="images/prg.png"
+                        style="object-fit: fill; width:84vw; height:32vh; margin-top:0; border-radius:80px 80px 0 0;"
+                        alt="Team Lead 5">
+                    <h4 style="font-family: Inter; color:white;margin-left:3vw; font-size:4vw; margin-bottom:0;">The 1st Version of our
+                        Chasis and Suspension Design </h4>
+                    <p style="font-family: Inter; font-size:3vw; margin:1vw; margin-left:0; padding:2vw;">It features an aluminum extrusion frame and aluminum sheet metal skin, allowing for a cost effective and easily modifiable chassis. The six-wheeled rocker bogie suspension uses a differential bar to ensure equal movement between the sides, with the two black gas shocks and all rubber airless tires absorbing impact forces.</p>
+                    <div id="roverbutton" style="margin-top:1vh;margin-bottom:1vh;">
+                        <button id="updates">Updates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2 class="discoveryh2">SPONSORS</h2>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div><img id="sponsorimg" src="images/sponsor.svg"></div>
+            <br>
+            <br>
+            <button id="sponsor">Sponsor Us</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; display:none;">
+                <img id="ftrstars" src="images/fstars.svg"><img src="images/logo.svg" id="logo-img2" alt="Logo">
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="footer-image-div2">
+        <div style="display: flex; flex-direction: column; align-items: center; ">
+            <div class="footericons"><img src="images/ig.svg" class="footerimg"><img src="images/fb.svg"
+                    class="footerimg">
+            </div>
+            <div>
+                <!-- <ul class="footerlist">
+                        <li>Rovers</li>
+                        <li>Teams</li>
+                        <li>Updates</li>
+                        <li>Sponsors</li>
+                    </ul>
+                    <p id="footerp">Copyright © 2024 Maverick Rover Team</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer-image-div">
+        <div style="display: flex; flex-direction: column; align-items: center; ">
+            <div class="footericons"><img src="images/ig.svg" class="footerimg"><img src="images/fb.svg"
+                    class="footerimg">
+            </div>
+            <div>
+                <ul class="footerlist">
+                    <li>Rovers</li>
+                    <li>Teams</li>
+                    <li>Updates</li>
+                    <li>Sponsors</li>
+                </ul>
+                <p id="footerp">Copyright © 2024 Maverick Rover Team</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
