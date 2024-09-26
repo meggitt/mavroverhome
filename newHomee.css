@@ -32,6 +32,7 @@
 html {
     width: 100%;
     font-size: 100%;
+    overflow-x:hidden !important;
 }
 
 body {
