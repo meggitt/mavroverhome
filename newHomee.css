@@ -918,8 +918,8 @@ tr:last-child {
 
     .carousel-item {
         padding: 5%;
-        flex: 0 0 56vw;
-        height: 112px;
+        flex: 0 0 56vw !important;
+        height: 112px !important;
         border-radius: 55px;
     }
 
