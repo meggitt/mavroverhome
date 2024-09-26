@@ -814,12 +814,6 @@ tr:last-child {
     }
 }
 
-@media (max-width: 1000px) {
-    .carousel-item {
-        padding: 1%;
-        flex: 0 0 28vw;
-    }
-}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
