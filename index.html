@@ -5,7 +5,7 @@
     <title>Maverick Rover Team</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -16,221 +16,261 @@
 </head>
 
 <body>
-    <div class="homebanner">
-        <div
-            style="display: flex; flex-direction:row; align-items:start; background: linear-gradient(to bottom, #232133cc 70%, #1c193800);">
-            <div style="width: 30%;"><img src="logo.svg" id="logoimg"></div>
-            <div id="menu-icon" style="float:right; margin-left:60%;" onclick="toggleMenu()">☰</div>
-            <ul id="headerlist">
-                <li id="close-icon" onclick="toggleMenu()">✖</li>
-                <li><a href="/rovers" class="headericons">Rovers</a></li>
-                <li><a href="/teams" class="headericons">Teams</a></li>
-                <li><a href="/Sponsors" class="headericons">Sponsors</a></li>
-                <li><a href="/Updates" class="headericons">Updates</a></li>
-                <li><a href="/legacy" class="headericons">Legacy</a></li>
-            </ul>
+
+    <div >
+        <div class="homebanner">
+            <div
+                style="display: flex; flex-direction:row; align-items:start; background: linear-gradient(to bottom, #232133cc 70%, #1c193800);">
+                <div style="width: 30%;"><img src="logo.svg" id="logoimg"></div>
+                <div id="menu-icon" style="float:right; margin-left:60%;" onclick="toggleMenu()">☰</div>
+                <ul id="headerlist">
+                    <li id="close-icon" onclick="toggleMenu()">✖</li>
+                    <li><a href="/rovers" class="headericons">Rovers</a></li>
+                    <li><a href="/teams" class="headericons">Teams</a></li>
+                    <li><a href="/Sponsors" class="headericons">Sponsors</a></li>
+                    <li><a href="/Updates" class="headericons">Updates</a></li>
+                    <li><a href="/legacy" class="headericons">Legacy</a></li>
+                </ul>
+            </div>
+
+            <img src="h2star1.svg" id="h2star1">
+            <div style="display: flex; flex-direction:column; justify-content:center; align-items:center;">
+                <div class="title1">
+                    ENGINEERING THE<img src="h2star2.svg" id="h2star2">
+                </div>
+                <!-- <img src="h2star1.svg" style=" margin-top: 0%; margin-bottom:0%; margin-left: 15vw; height:3vh; width:5vw"> -->
+                <div class="title2">
+                    FUTURE<img src="h2star1.svg"
+                        style=" margin-top: 18%; margin-bottom:0%; margin-left: 61vw; height:12vh; width:7vw; position:absolute;">
+                </div>
+
+                <div id="headertagline">Exploring the Universe One Rover at a Time</div>
+                <br>
+                <div id="bannerbuttons">
+                    <button id="meettheteam">Meet the Team</button>
+                    <button id="sponsorus">Sponsor Us</button>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
         </div>
+        <div id="webdiscoverydiv">
+            <img src="h2star1.svg" id="dstar1">
+            <div style="padding-left:10%; padding-right:10%; ">
+                <br>
+                
+                <button id="roversbuttonweb">Our Rovers</button>
+                <h2>DISCOVERY STARTS HERE</h2>
 
-        <img src="h2star1.svg" id="h2star1">
-        <div style="display: flex; flex-direction:column; justify-content:center; align-items:center;">
-            <div class="title1">
-                ENGINEERING THE<img src="h2star2.svg" id="h2star2">
+                <div id="discoverydivcols">
+                    <h3>Welcome to
+                        the Maverick Rover Team at the University of Texas
+                        at Arlington!</h3>
+                    At the forefront of innovation, the Maverick Rover Team is a multidisciplinary group of students
+                    dedicated to engineering the future of space exploration. Our team designs and builds
+                    cutting-edge rovers to compete in international competitions such as the University Rover
+                    Challenge.
+                    <br>Comprised of students from engineering, science, and design backgrounds, our team works
+                    collaboratively to push the boundaries of what's possible in rover technology. Each discipline
+                    contributes its unique expertise to the design, programming, and fabrication of rovers that can
+                    endure and operate in the harsh conditions of extraterrestrial environments. From mechanical
+                    engineers perfecting the suspension systems to computer scientists programming autonomous
+                    navigation, every aspect of the rover is meticulously developed.
+                    <br><br>
+                    Through our work, we aim to inspire the next generation of engineers and scientists while
+                    contributing to the broader goals of space exploration. The diversity of skills within our team
+                    ensures that we tackle challenges from multiple angles, leading to innovative solutions that set
+                    our
+                    rovers apart in international competitions. Whether it's through competing on the international
+                    stage or engaging with the local community, the Maverick Rover Team is always striving to go
+                    above
+                    and beyond.
+                    <br>
+                    <h4 style="font-family: century-gothic-bold;">Join us as we engineer the future, one rover at a
+                        time!</h4>
+                    <div style="justify-content: center; align-items: center;display:flex; flex-direction:column;">
+                        <button id="roversbuttonmob">Our Rovers</button>
+                    </div>
+                </div>
             </div>
-            <!-- <img src="h2star1.svg" style=" margin-top: 0%; margin-bottom:0%; margin-left: 15vw; height:3vh; width:5vw"> -->
-            <div class="title2">
-                FUTURE<img src="h2star1.svg"
-                    style=" margin-top: 18%; margin-bottom:0%; margin-left: 61vw; height:12vh; width:7vw; position:absolute;">
-            </div>
+            <img src="h2star2.svg" id="dstar2">
 
-            <div id="headertagline">Exploring the Universe One Rover at a Time</div>
-            <br>
-            <div id="bannerbuttons">
-                <button id="meettheteam">Meet the Team</button>
-                <button id="sponsorus">Sponsor Us</button>
-            </div>
-
-            <div id="webdiscoverydiv">
-                <img src="h2star1.svg" id="dstar1">
+            <!-- <img id="tlstar1" src="h2star2.svg"> -->
+            <div class="teamleads">
+                <br>
                 <div style="padding-left:10%; padding-right:10%; ">
                     <br>
                     <br>
-                    <button id="roversbuttonweb">Our Rovers</button>
-                    <h2>DISCOVERY STARTS HERE</h2>
-
-                    <div id="discoverydivcols">
-                        <h3>Welcome to
-                            the Maverick Rover Team at the University of Texas
-                            at Arlington!</h3>
-                        At the forefront of innovation, the Maverick Rover Team is a multidisciplinary group of students
-                        dedicated to engineering the future of space exploration. Our team designs and builds
-                        cutting-edge rovers to compete in international competitions such as the University Rover
-                        Challenge.
-                        <br>Comprised of students from engineering, science, and design backgrounds, our team works
-                        collaboratively to push the boundaries of what's possible in rover technology. Each discipline
-                        contributes its unique expertise to the design, programming, and fabrication of rovers that can
-                        endure and operate in the harsh conditions of extraterrestrial environments. From mechanical
-                        engineers perfecting the suspension systems to computer scientists programming autonomous
-                        navigation, every aspect of the rover is meticulously developed.
-                        <br><br>
-                        Through our work, we aim to inspire the next generation of engineers and scientists while
-                        contributing to the broader goals of space exploration. The diversity of skills within our team
-                        ensures that we tackle challenges from multiple angles, leading to innovative solutions that set
-                        our
-                        rovers apart in international competitions. Whether it's through competing on the international
-                        stage or engaging with the local community, the Maverick Rover Team is always striving to go
-                        above
-                        and beyond.
-                        <br>
-                        <h4 style="font-family: century-gothic-bold;">Join us as we engineer the future, one rover at a
-                            time!</h4>
-                        <div style="justify-content: center; align-items: center;display:flex; flex-direction:column;">
-                            <button id="roversbuttonmob">Our Rovers</button>
-                        </div>
-                    </div>
+                    <button id="meettheteams">Meet the Teams</button>
+                    <h2>TEAM LEADS</h2>
                 </div>
-                <img src="h2star2.svg" id="dstar2">
-
-                <!-- <img id="tlstar1" src="h2star2.svg"> -->
-                <div class="teamleads">
-                    <br>
-                    <div style="padding-left:10%; padding-right:10%; ">
-                        <br>
-                        <br>
-                        <button id="meettheteams">Meet the Teams</button>
-                        <h2>TEAM LEADS</h2>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="carousel-wrapper">
-                        <div class="carousel">
-                            <!-- <div class="carousel-item" style="width: 20vw;">
+                <br>
+                <br>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <!-- <div class="carousel-item" style="width: 20vw;">
                                 </h2>
                             </div> -->
-                            <div class="carousel-item" style="background-color: #F69E5F; color:black;"><img
-                                    src="tl1.jpg">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color: black;">Gabriel<br>Bentley</h3>
-                                    <h4 class="citemdataheaders4">PRESIDENT</h4>
-                                    <h5 class="citemdataheaders5">Major: Aerospace Engineering</h5>
-                                </div>
+                        <div class="carousel-item" style="background-color: #F69E5F; color:black;"><img src="tl1.jpg">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color: black;">Gabriel<br>Bentley</h3>
+                                <h4 class="citemdataheaders4">PRESIDENT</h4>
+                                <h5 class="citemdataheaders5">Major: Aerospace Engineering</h5>
+                            </div>
 
-                            </div>
-                            <div class="carousel-item" style="background-color: #66244A; color:white;"><img
-                                    src="tl2.jpeg">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color: white">Shaurya<br>Saini</h3>
-                                    <h4 class="citemdataheaders4" style="color: white">VICE PRESIDENT</h4>
-                                    <h5 class="citemdataheaders5" style="color: white;">Major: Aerospace Engineering
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item" style="background-color:#AE445A; color:white;"><img
-                                    src="tl3.jpg">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color:rgb(255, 255, 255);">Isabel<br>Gutirez
-                                    </h3>
-                                    <h4 class="citemdataheaders4" style="color:white;">TREASURER</h4>
-                                    <h5 class="citemdataheaders5" style="color:white;">Major: Accounting and Finance BBA
-                                    </h5>
-                                </div>
-                            </div>
-                            <!-- Make this active -->
-                            <div class="carousel-item" style="background-color: #F69E5F; color:black;"><img
-                                    src="tl4.jpeg">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color: black;">Whitney<br>Kamena</h3>
-                                    <h4 class="citemdataheaders4s" style="color: black;">Mechanical Drill Team Lead</h4>
-                                    <h5 class="citemdataheaders5s" style="color: black;">Major: Aerospace Engineering
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item" style="background-color: #66244A; color:white;"><img
-                                    src="tl5.jpeg">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color: white">Ishita<br>Sunil</h3>
-                                    <h4 class="citemdataheaders4" style="color: white">SPARK LEAD</h4>
-                                    <h5 class="citemdataheaders5" style="color: white;">Major: Information Systems</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item" style="background-color: #AE445A; color:white;"><img
-                                    src="tl6.JPG">
-                                <div class="citemdata">
-                                    <h3 class="citemdataheaders" style="color: white">Jason<br>Cabrejos</h3>
-                                    <h4 class="citemdataheaders4" style="color: white">CONTROLS<br>LEAD</h4>
-                                    <h5 class="citemdataheaders5" style="color: white;">Major: Computer Science</h5>
-                                </div>
+                        </div>
+                        <div class="carousel-item" style="background-color: #66244A; color:white;"><img src="tl2.jpeg">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color: white">Shaurya<br>Saini</h3>
+                                <h4 class="citemdataheaders4" style="color: white">VICE PRESIDENT</h4>
+                                <h5 class="citemdataheaders5" style="color: white;">Major: Aerospace Engineering
+                                </h5>
                             </div>
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="pattern">
-                        <img class="dis" src="pstar.svg"><img src="pattern.svg"
-                            style="object-fit: fill;"><img style="object-fit: fill;" class="dis"
-                            src="pstar2.svg">
+                        <div class="carousel-item" style="background-color:#AE445A; color:white;"><img src="tl3.jpg">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color:rgb(255, 255, 255);">Isabel<br>Gutirez
+                                </h3>
+                                <h4 class="citemdataheaders4" style="color:white;">TREASURER</h4>
+                                <h5 class="citemdataheaders5" style="color:white;">Major: Accounting and Finance BBA
+                                </h5>
+                            </div>
+                        </div>
+                        <!-- Make this active -->
+                        <div class="carousel-item" style="background-color: #F69E5F; color:black;"><img src="tl4.jpeg">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color: black;">Whitney<br>Kamena</h3>
+                                <h4 class="citemdataheaders4s" style="color: black;">Mechanical Drill Team Lead</h4>
+                                <h5 class="citemdataheaders5s" style="color: black;">Major: Aerospace Engineering
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background-color: #66244A; color:white;"><img src="tl5.jpeg">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color: white">Ishita<br>Sunil</h3>
+                                <h4 class="citemdataheaders4" style="color: white">SPARK LEAD</h4>
+                                <h5 class="citemdataheaders5" style="color: white;">Major: Information Systems</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background-color: #AE445A; color:white;"><img src="tl6.JPG">
+                            <div class="citemdata">
+                                <h3 class="citemdataheaders" style="color: white">Jason<br>Cabrejos</h3>
+                                <h4 class="citemdataheaders4" style="color: white">CONTROLS<br>LEAD</h4>
+                                <h5 class="citemdataheaders5" style="color: white;">Major: Computer Science</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <br>
+                <br>
+                <div class="pattern">
+                    <img class="dis" src="pstar.svg"><img src="pattern.svg" style="object-fit: fill;"><img
+                        style="object-fit: fill;" class="dis" src="pstar2.svg">
+                </div>
+            </div>
 
-                <h2 style="padding-left: 10%;">OUR PROGRESS <img style="object-fit: fill;" class="dis"
-                        src="h2star1.svg"></h2>
+            <h2 style="padding-left: 10%;">OUR PROGRESS <img style="object-fit: fill;" class="dis" src="h2star1.svg">
+            </h2>
 
-                <div class="pattern2">
-                    <img class="dis" src="pstar3.svg">
+            <div class="pattern2">
+                <img class="dis" src="pstar3.svg">
 
-                    <div class="container">
-                        <div class="video-section">
-                            <!-- Add your video here -->
-                            <video src="Render 6_Motion Study 2.mp4" autoplay muted loop></video>
-                        </div>
-                        <div class="content-section">
-                            <div class="content-section-info">
-                                Shown here is the V1 of our Chassis and Suspension design, it features an aluminum
-                                extrusion
-                                frame and aluminum sheet metal skin, allowing for a cost effective and easily modifiable
-                                chassis.
-                                The six-wheeled rocker bogie suspension uses a differential bar to ensure equal movement
-                                between the sides, with the two black gas shocks and all rubber airless tires absorbing
-                                impact forces.</div>
-                            <br>
-                            <div
-                                style="justify-content: center; align-items: center;display:flex; flex-direction:column;">
-                                <button id="meettheteam">Updates</button>
-                            </div>
-
+                <div class="container">
+                    <div class="video-section">
+                        <!-- Add your video here -->
+                        <video src="Render 6_Motion Study 2.mp4" autoplay muted loop></video>
+                    </div>
+                    <div class="content-section">
+                        <div class="content-section-info">
+                            Shown here is the V1 of our Chassis and Suspension design, it features an aluminum
+                            extrusion
+                            frame and aluminum sheet metal skin, allowing for a cost effective and easily modifiable
+                            chassis.
+                            The six-wheeled rocker bogie suspension uses a differential bar to ensure equal movement
+                            between the sides, with the two black gas shocks and all rubber airless tires absorbing
+                            impact forces.</div>
+                        <br>
+                        <div style="justify-content: center; align-items: center;display:flex; flex-direction:column;">
+                            <button id="meettheteam">Updates</button>
                         </div>
 
                     </div>
-                    <img style="object-fit: fill;" class="dis" src="pstar4.svg">
+
                 </div>
-                <div class="websponsor">
-                    
-                <h2 style="padding-left: 10%;"><img style="object-fit: fill;"
-                    src="h2star1.svg">SPONSORS</h2>
-                
+                <img style="object-fit: fill;" class="dis" src="pstar4.svg">
+            </div>
+            <div class="websponsor">
+
+                <h2 style="padding-left: 10%;">SPONSORS</h2>
+
                 <img style="padding-left: 10%;" src="sponsor.svg">
             </div>
             <div class="mobsponsor" style="text-align:center;">
-                
-                <h2>SPONSORS<img style="object-fit: fill; float:inline-end;" src="h2star2.svg"></h2>
-                
+
+                <h2>SPONSORS</h2>
+
                 <img src="sponsor.svg">
             </div>
-                <div class="webfooter">
-                    <div class="leftfooter"><img src="footerbg.svg"
-                            style="height:65vh !important; width:30vw !important; margin-left:0%;"></div>
-                    <div class="middlefooter">
-                        <div style="width: 30%;"><img src="logo.svg"><br></div>
-                        <br>
-                        <br>
+            <div class="webfooter">
+                <div class="leftfooter"><img src="footerbg.svg"
+                        style="height:65vh !important; width:30vw !important; margin-left:0%;"></div>
+                <div class="middlefooter">
+                    <div style="width: 30%;"><img src="logo.svg"><br></div>
+                    <br>
+                    <br>
+                    <div style="display:flex; flex-direction:row;gap:10%; justify-content:center"><img
+                            src="igfooter.svg" width="12%"><img src="fbfooter.svg" width="12%"><img src="emfooter.svg"
+                            width="12%">
+
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display:flex; align-items:center; justify-content:center;">
+                        <table style="width: 12vw; text-align:center; font-size:2vw; color:white;">
+                            <tr>
+                                <td>Rovers</td>
+                            </tr>
+                            <tr>
+                                <td>Teams</td>
+                            </tr>
+                            <tr>
+                                <td>Updates</td>
+                            </tr>
+                            <tr>
+                                <td>Sponsors</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <br>
+                    <div
+                        style="display:flex; align-items:center; justify-content:center; font-size:1vw; font-family:century-gothic-regular; color:white;">
+                        Copyright © 2024 Maverick Rover Team
+                    </div>
+
+                </div>
+                <div class="rightfooter"><img src="footerbg2.svg"
+                        style="height:65vh !important; width:32vw !important; margin-right:0%;"></div>
+            </div>
+            <div class="mobilefooter">
+                <div style="display:flex; justify-content: center;"><img src="mbfooterlogo.svg" style="width:85vw;"><br>
+                </div>
+                <div class="footer-image-div">
+                    <br>
+                    <br>
+                    <br>
+                    <div style="display: flex; flex-direction: column; align-items: center; ">
                         <div style="display:flex; flex-direction:row;gap:10%; justify-content:center"><img
-                                src="igfooter.svg" width="12%"><img src="fbfooter.svg" width="12%"><img
-                                src="emfooter.svg" width="12%">
+                                src="igfooter.svg" width="32%"><img src="fbfooter.svg" width="32%"><img
+                                src="emfooter.svg" width="32%">
 
                         </div>
                         <br>
                         <br>
+
                         <div style="display:flex; align-items:center; justify-content:center;">
-                            <table style="width: 12vw; text-align:center; font-size:2vw; color:white;">
+                            <table style="width: 32vw; text-align:center; font-size:5vw; color:white;">
                                 <tr>
                                     <td>Rovers</td>
                                 </tr>
@@ -248,62 +288,16 @@
                         <br>
                         <br>
                         <div
-                            style="display:flex; align-items:center; justify-content:center; font-size:1vw; font-family:century-gothic-regular; color:white;">
-                            Copyright © 2024 Maverick Rover Team
-                        </div>
-
-                    </div>
-                    <div class="rightfooter"><img src="footerbg2.svg"
-                            style="height:65vh !important; width:32vw !important; margin-right:0%;"></div>
-                </div>
-                <div class="mobilefooter">
-                    <br>
-                    <br>
-                    <div style="display:flex; justify-content: center;"><img src="mbfooterlogo.svg" style="width:85vw;"><br></div>
-                    <br>
-                    <br>
-                    <div class="footer-image-div">
-                        <br>
-                        <br>
-                        <br>
-                        <div style="display: flex; flex-direction: column; align-items: center; ">
-                            <div style="display:flex; flex-direction:row;gap:10%; justify-content:center"><img
-                                    src="igfooter.svg" width="32%"><img src="fbfooter.svg"
-                                    width="32%"><img src="emfooter.svg" width="32%">
-
-                            </div>
-                            <br>
-                            <br>
-
-                            <div style="display:flex; align-items:center; justify-content:center;">
-                                <table style="width: 32vw; text-align:center; font-size:5vw; color:white;">
-                                    <tr>
-                                        <td>Rovers</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Teams</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Updates</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sponsors</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <br>
-                            <br>
-                            <div
                             style="display:flex; align-items:center; justify-content:center; font-size:5vw; font-family:century-gothic-regular; color:white;">
                             Copyright © 2024 Maverick Rover Team
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+
 
     <script>
         function toggleMenu() {
