@@ -555,7 +555,7 @@ body {
     padding-right: 4%;
     width: 80vw;
     /* Limit width to display 3 items */
-    overflow: auto;
+    overflow: hidden;
     /* Hide overflow to display only 3 items at a time */
 }
 
@@ -590,7 +590,7 @@ body {
 /* Carousel Items (rectangular divs) */
 .carousel-item {
     padding: 1%;
-    flex: 0 0 auto;
+    flex: 0 0 24vw;
     /* Each item takes up roughly a third of the carousel */
     height: 150px;
     opacity: 1;
@@ -919,7 +919,7 @@ tr:last-child {
     .carousel-item {
         padding: 5%;
         flex: 0 0 auto;
-        height: 112px !important;
+        height: 112px;
         border-radius: 55px;
     }
 
