@@ -564,7 +564,7 @@ body {
     display: flex;
     gap: 3px;
     /* Add space between items */
-    scroll-snap-type: unset;
+    scroll-snap-type: x mandatory;
     /* Enable smooth scrolling with snapping */
     overflow-x: scroll;
     /* Enable horizontal scrolling */
