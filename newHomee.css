@@ -590,7 +590,7 @@ body {
 /* Carousel Items (rectangular divs) */
 .carousel-item {
     padding: 1%;
-    flex: 0 0 24vw;
+    flex: 0 0 auto;
     /* Each item takes up roughly a third of the carousel */
     height: 150px;
     opacity: 1;
@@ -918,7 +918,7 @@ tr:last-child {
 
     .carousel-item {
         padding: 5%;
-        flex: 0 0 56vw !important;
+        flex: 0 0 auto;
         height: 112px !important;
         border-radius: 55px;
     }
