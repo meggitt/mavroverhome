@@ -555,7 +555,7 @@ body {
     padding-right: 4%;
     width: 80vw;
     /* Limit width to display 3 items */
-    overflow: hidden;
+    overflow: auto;
     /* Hide overflow to display only 3 items at a time */
 }
 
